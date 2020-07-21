@@ -4,7 +4,8 @@ Update player_tv_url field where it does not exist.
 
 * Registers the players post type
 * Provides a network settings page to update player meta
-* Gets player posts that do not have the player_tv_url field and updates it
+* Form submission on the settings page triggers a background task that runs a loop on players with the missing field, and updates the post.
+* This background task can also be trigger by accessing the admin-post.php?action={action} url directly.
 
 # Directions
 
